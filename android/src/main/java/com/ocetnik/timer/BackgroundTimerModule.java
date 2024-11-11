@@ -94,4 +94,12 @@ public class BackgroundTimerModule extends ReactContextBaseJavaModule {
         // todo one day..
         // not really neccessary to have
     }*/
+
+    // needed to keep RN from whining
+    @ReactMethod
+    public void addListener(String eventName) {
+    }
+    @ReactMethod
+    public void removeListeners(Integer count) {
+    }
 }
